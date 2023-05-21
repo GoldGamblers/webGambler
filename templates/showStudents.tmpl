@@ -1,0 +1,10 @@
+<!-- templates/showStudents.tmpl -->
+<html>
+<body>
+    <h1>hello, {{.title}}</h1>
+    <h3>msg as follow</h3>
+    {{range $index, $ele := .stuArr }}
+    <p>id = {{ $index }} : {{ $ele.Name }} is {{ $ele.Age }} years old</p>
+    {{ end }}
+</body>
+</html>
